@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(229deg, 57%, 11%);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+}
+
+.container__desktop {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-image: url("../images/bg-mobile.png");
+}
+.container__one {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 1rem 10rem 1rem 1rem;
+  width: 33rem;
+  height: 20rem;
+  background-color: hsl(228deg, 56%, 26%);
+}
+.container__logo {
+  margin-left: 4.2rem;
+  padding-top: 4.2rem;
+  padding-bottom: 3rem;
+}
+.container__icon-items {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 3em;
+}
+.container__box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: hsl(229deg, 57%, 11%);
+  border-radius: 10px;
+}
+.container__two {
+  text-align: center;
+  width: 33rem;
+  height: 16rem;
+  background-color: hsl(228deg, 56%, 26%);
+  border-radius: 1rem 1rem 1rem 1rem;
+  position: relative;
+}
+.container__text {
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: hsl(229deg, 7%, 55%);
+}
+.container__text span {
+  color: hsl(243deg, 100%, 93%);
+  font-weight: bold;
+}
+.container__text-two {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 3.3rem 0 3.3rem;
+  font-size: 1.2rem;
+}
+.container__upload-line {
+  margin: 0 auto;
+  border-radius: 1rem;
+  width: 26rem;
+  height: 2rem;
+  background-color: hsl(228deg, 55%, 18%);
+  display: flex;
+  align-items: center;
+}
+.container__upload-line .gradient-line {
+  margin-left: 2px;
+  position: relative;
+  width: 75%;
+  height: 12px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, hsl(6deg, 100%, 80%), hsl(335deg, 100%, 65%));
+  display: flex;
+  align-items: center;
+}
+.container__upload-line .white-circle {
+  position: absolute;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.container__three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 7rem;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+}
+.container__three .memory {
+  font-weight: bold;
+  font-size: 4.5rem;
+}
+.container__three .text {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: hsl(229deg, 7%, 55%);
+}/*# sourceMappingURL=style.css.map */

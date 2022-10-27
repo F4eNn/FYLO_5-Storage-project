@@ -1,0 +1,134 @@
+
+
+@use 'colors' as *;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	background-color: $Very-Dark-Blue;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.4rem;
+}
+.container__desktop {
+	display: none;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-image: url('../images/bg-mobile.png');
+
+	&__one {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2rem;
+		border-radius: 1rem 10rem 1rem 1rem;
+		width: 33rem;
+		height: 20rem;
+		background-color: $Dark-Blue;
+	}
+	&__logo {
+		margin-left: 4.2rem;
+		padding-top: 4.2rem;
+		padding-bottom: 3rem;
+	}
+	&__icon-items{
+		display: flex;
+		gap: 1.5rem;
+		margin-left: 3em;
+	}
+	&__box-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		background-color: $Very-Dark-Blue;
+		border-radius: 10px;
+	}
+	&__two {
+		text-align: center;
+		width: 33rem;
+		height: 16rem;
+		background-color: $Dark-Blue;
+		border-radius: 1rem 1rem 1rem 1rem;
+		position: relative;
+	}
+	&__text {
+		margin-top: 3.5rem;
+		margin-bottom: 1.5rem;
+		color: $Grayish-Blue;
+		span {
+			color: $Pale-Blue;
+			font-weight: bold;
+		}
+	}
+	&__text-two {
+		display: flex;
+		justify-content: space-between;
+		margin: 1rem 3.3rem 0 3.3rem;
+		font-size: 1.2rem;
+	}
+	&__upload-line {
+		margin: 0 auto;
+		border-radius: 1rem;
+		width: 26rem;
+		height: 2rem;
+		background-color: $Upload-Background;
+		display: flex;
+		align-items: center;
+		.gradient-line {
+			margin-left: 2px;
+			position: relative;
+			width: 75%;
+			height: 12px;
+			border-radius: 10px;
+			background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+			display: flex;
+			align-items: center;
+		}
+		.white-circle {
+			position: absolute;
+			right: 2px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: #fff;
+		}
+	}
+	&__three {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 18rem;
+		height: 7rem;
+		background-color: #fff;
+		color: #000;
+		position: absolute;
+		bottom: -20%;
+		left: 50%;
+		transform: translate(-50%);
+		border-radius: 10px;
+
+		.memory{
+			font-weight: bold;
+			font-size: 4.5rem;
+		}
+		.text{
+			padding-left: 1rem;
+			font-size: 1.2rem;
+			font-weight: bold;
+			color: $Grayish-Blue;
+		}
+	}
+}
